@@ -4,7 +4,8 @@
   "description": "Unit testing in JS with Mocha and Chai",
   "main": "app.js",
   "scripts": {
-    "test": "mocha || true"
+    "test": "mocha || true",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/neotechmonk/mocha-chai#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.2.0"
   }
 }

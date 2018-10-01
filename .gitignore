@@ -12,3 +12,6 @@ node_modules/*
 .vscode/*
 
 *.package-lock.json
+
+#test coverage files
+coverage/*
