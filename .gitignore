@@ -15,3 +15,6 @@ node_modules/*
 
 #test coverage files
 coverage/*
+
+#Es lint files
+.eslint*

@@ -1,14 +1,14 @@
 // Based on https://www.youtube.com/watch?v=MLTRHc5dk6s
 
-const assert = require("chai").assert;
-const app = require("../app");
-const mocha = require("mocha");
+import { assert } from "chai";
+import { getName, addNumber } from "../app";
+import { describe } from "mocha";
 
-let getNameResult = app.getName();
-let addNumberResult = app.addNumber(5, 5);
+let getNameResult = getName();
+let addNumberResult = addNumber(5, 5);
 
-mocha.describe("App ", function() {
-  mocha.describe("App-GetName ", function() {
+describe("App ", function() {
+  describe("App-GetName ", function() {
     //Expected value
     it("getName should return Theepan", function() {
       assert.equal(getNameResult, "Theepan");
