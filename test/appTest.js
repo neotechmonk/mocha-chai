@@ -7,7 +7,6 @@ const mocha = require("mocha");
 let getNameResult = app.getName();
 let addNumberResult = app.addNumber(5, 5);
 
-
 mocha.describe("App ", function() {
   mocha.describe("App-GetName ", function() {
     //Expected value
@@ -19,6 +18,10 @@ mocha.describe("App ", function() {
       assert.notEqual(getNameResult, "Arunan");
     });
 
+    //Shouldnt return null
+    it("getName should not  return null ", function() {
+      assert.isNotNull(getNameResult);
+    });
     //Type of return value
     it("getName should always return a string", function() {
       assert.typeOf(getNameResult, "string");
